@@ -1,4 +1,7 @@
 node_modules/
 .env
 dist/
-test-results_
+test-results
+.idea/
+package-lock.json
+
