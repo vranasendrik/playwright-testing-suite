@@ -1,0 +1,4 @@
+{
+  "filter-by-city-dropdown": ".inp-custom-select__select",
+  "career-by-city results": ".c-positions__info"
+}

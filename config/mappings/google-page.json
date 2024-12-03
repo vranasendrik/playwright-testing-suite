@@ -1,0 +1,5 @@
+{
+  "search-bar-input": "#APjFqb",
+  "submit-button": "input[name='btnK']:visible",
+  "accept-cookies-button": "#L2AGLb"
+}

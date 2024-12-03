@@ -1,0 +1,5 @@
+{
+  "about-us-menu-button": "li.m-main__item div.dropdown__toggle a.m-main__link[href='https://www.morosystems.cz/o-nas/']",
+  "career-dropdown-link": "a.dropdown__link[href='https://www.morosystems.cz/kariera/']",
+  "accept-cookies-button": "#cookiescript_accept"
+}
