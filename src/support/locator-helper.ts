@@ -26,7 +26,6 @@ export const getElementLocator = (
         __dirname,
         "..",
         "..",
-        "..",
         "config",
         "mappings",
         `${currentScreen}.json`
@@ -40,7 +39,6 @@ export const getElementLocator = (
         // Load locators from the default common.json file
         const commonFilePath = path.join(
             __dirname,
-            "..",
             "..",
             "..",
             "config",

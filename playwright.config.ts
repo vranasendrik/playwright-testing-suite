@@ -15,8 +15,8 @@ import { env, getJsonFromFile } from "./src/setup/parseEnv";
  */
 
 const testDir = defineBddConfig({
-    features: "./e2e/src/features/*.feature",
-    steps: "./e2e/src/**/*.ts",
+    features: "./src/features/*.feature",
+    steps: "./src/**/*.ts",
 });
 
 const hostFilePath = env("HOST_FILE_PATH");

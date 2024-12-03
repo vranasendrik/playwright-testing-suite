@@ -22,7 +22,7 @@ export class MyWorld {
     async navigateToPage(pageKey: string) {
         const pagesPath = process.env.PAGES_PATH || "../config/pages.json";
         const pagesConfig = JSON.parse(
-            fs.readFileSync(path.join(__dirname, "..", "..", pagesPath), "utf-8")
+            fs.readFileSync(path.join(__dirname, "..", pagesPath), "utf-8")
         );
 
         const pageUrl = pagesConfig[`${pageKey}-page`];

@@ -4,4 +4,6 @@ dist/
 test-results
 .idea/
 package-lock.json
-
+playwright-report
+.features-gen
+.DS_Store
