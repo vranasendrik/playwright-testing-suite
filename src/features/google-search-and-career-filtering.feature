@@ -1,5 +1,6 @@
 Feature: Google search and MoroSystem career filtering
 
+  @dev
   Scenario: I can search for MoroSystems on Google and filter careers on the MoroSystems career page
     Given Open "google" page
     When I click on "accept-cookies-button"
