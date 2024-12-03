@@ -56,7 +56,7 @@ To run the tests, you can use the following commands:
 
   This will run only the tests tagged with `@smoke`.
 
-- **Run tests in development mode (skip BDD generation):**
+- **Run tests for tag dev:**
 
    ```bash
    npm run test-dev
