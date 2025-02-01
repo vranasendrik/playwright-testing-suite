@@ -19,6 +19,8 @@ const testDir = defineBddConfig({
     steps: "./src/**/*.ts",
 });
 
+const apiTestDir = "./api-tests"
+
 const hostFilePath = env("HOST_FILE_PATH");
 const hosts = getJsonFromFile<Record<string, string>>(hostFilePath);
 const instance = env("INSTANCE") || "localhost";
@@ -42,18 +44,27 @@ export default defineConfig({
 
     /* Configure projects for major browsers */
     projects: [
+
         {
-            name: "chromium",
-            use: {
-                browserName: "chromium",
-            },
+            name: 'chromium',
+            use: { ...devices['Desktop Chrome'] },
+        },
+        {
+            name: 'firefox',
+            use: { ...devices['Desktop Firefox'] },
+        },
+        {
+            name: 'webkit',
+            use: { ...devices['Desktop Safari'] },
         },
 
-        // {
-        //   name: "firefox",
-        //   use: {
-        //     browserName: "firefox",
-        //   },
-        // },
+
+        {
+            name: "api-tests",
+            testDir: apiTestDir,
+            use: {
+                baseURL: baseUrl,
+            },
+        },
     ],
 });
