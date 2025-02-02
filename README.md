@@ -46,7 +46,7 @@ To run the tests, you can use the following commands:
 - **Run test in UI mode:**
 
    ```bash
-   npm runt test
+   npm run test
    ```
 
   This will run tests in UI mode
